@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vgamebase</groupId>
+	<artifactId>vgamebase</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<spring.version>4.3.26.RELEASE</spring.version>
+		<spring.security>4.2.15.RELEASE</spring.security>
+		<hibernate.version>4.3.10.Final</hibernate.version>
+		<mysql.connector.version>8.0.11</mysql.connector.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20190722</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+
+	</dependencies>
+	
+	<modules>
+
+	<module>Model</module>
+	<module>Configuration</module>
+	<module>Dao</module>
+	<module>Service</module>
+	<module>Security</module>
+	<module>Web</module>
+	<module>Rest</module>
+	</modules>
+</project>
