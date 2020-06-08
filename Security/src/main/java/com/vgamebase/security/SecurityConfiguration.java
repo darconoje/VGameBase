@@ -35,14 +35,24 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 		http.csrf().disable()
 
-				.authorizeRequests().antMatchers("/css/**").permitAll().antMatchers("/js/**").permitAll()
-				.antMatchers("/img/**").permitAll().antMatchers("/registration").permitAll()
-				.antMatchers("/captcha-image.jpg").permitAll().antMatchers("/onlineusers").permitAll()
-
-				.and().authorizeRequests().antMatchers("/platforms").authenticated().antMatchers("/publishers")
-				.authenticated().antMatchers("/update").access("hasAuthority('Admin')").antMatchers("/admin")
-				.access("hasAuthority('Admin')").antMatchers("/populate").access("hasAuthority('Admin')")
-
+				.authorizeRequests()
+					.antMatchers("/css/**").permitAll()
+					.antMatchers("/js/**").permitAll()
+					.antMatchers("/img/**").permitAll()
+					.antMatchers("/registration").permitAll()
+					.antMatchers("/captcha-image.jpg").permitAll()
+					.antMatchers("/onlineusers").permitAll()
+					.antMatchers("/update").access("hasAuthority('Admin')")
+					.antMatchers("/admin").access("hasAuthority('Admin')")
+					.antMatchers("/populate").access("hasAuthority('Admin')")
+					
+					.antMatchers("/login*").permitAll()
+					
+					.and().authorizeRequests()	
+					.anyRequest().authenticated()
+					
+					
+				
 				.and().formLogin().loginPage("/login").permitAll().usernameParameter("username")
 				.passwordParameter("password").defaultSuccessUrl("/games", true).permitAll().
 
