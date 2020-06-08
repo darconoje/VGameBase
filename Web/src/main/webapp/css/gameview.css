@@ -1,0 +1,40 @@
+.container1 {
+	border-radius: 50px;
+	-webkit-box-shadow: inset 6px -6px 15px 1px rgba(0, 0, 0, 0.6);
+	box-shadow: inset 6px -6px 15px 1px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron {
+	-webkit-box-shadow: 7px 7px 15px 3px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 7px 7px 15px 3px rgba(0, 0, 0, 0.65);
+	box-shadow: 7px 7px 15px 3px rgba(0, 0, 0, 0.65);
+	border: 1px solid #000000;
+	margin-bottom: 50px;
+}
+
+.jumbotron>h1 {
+	color: #fff;
+	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+	font-size: 30px;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.card-header, .card-footer {
+	background-color: rgba(220, 53, 69, 1) !important;
+}
+
+.card-header {
+	border-bottom: 1px solid #000000;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.card-footer {
+	border-top: 1px solid #000000;
+}
+
+.card {
+	border: 1px solid #000000;
+	-webkit-box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 13px -6px rgba(0, 0, 0, 0.75);
+}

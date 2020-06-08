@@ -29,9 +29,9 @@
 		</dependency>	
 		
 		<dependency>
-			<groupId>com.practicas</groupId>
-			<artifactId>exercise2-dao</artifactId>
-			<version>1.0</version>
+			<groupId>com.vgamebase</groupId>
+			<artifactId>Dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
