@@ -23,3 +23,5 @@ Si se toma la segunda opción (rellenar base de datos con JSON) hay que tomar al
   
   
 -El archivo Configuration/src/main/resources/application.properties contiene la configuración para el acceso a la base de datos, es recomendable usar el nombre vgamebase para ella, ya que el proyecto está configurado para que funcione de esta manera. En jdbc.username y en jdbc.password habrá que añadir el nombre de usuario y contraseña del usuario MySQL, respectivamente  
+  
+La url por defecto para acceder al sitio web con el servidor desplegado en local es http://localhost:8080/Web/login  
