@@ -143,5 +143,17 @@ public class User implements Serializable{
 				+ ", userName=" + userName
 				+ ", email=" + email + "]";
 	}
+	
+	public boolean alreadyVoted(GamePlatform gameplatform, String vote) {
+		
+		boolean voted = false;
+		
+		if((int) this.votes.stream().filter( v -> v.getGame().getId() == gameplatform.getId() && v.getVote().equals(vote)).count() > 0) {
+			voted = true;
+		}
+		
+		return voted;
+		
+	}
 
 }

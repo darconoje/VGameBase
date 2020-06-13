@@ -8,9 +8,9 @@
 	<display-name>VGameBase</display-name>
 	
 
-	<session-config>
-        <session-timeout>2000</session-timeout>
-    </session-config>
+<!-- 	<session-config> -->
+<!--         <session-timeout>2000</session-timeout> -->
+<!--     </session-config> -->
     
 	<context-param>
     	<param-name>contextConfigLocation</param-name>

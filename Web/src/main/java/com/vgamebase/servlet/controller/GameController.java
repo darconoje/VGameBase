@@ -14,20 +14,28 @@ import javax.servlet.http.Part;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.vgamebase.servlet.configuration.HibernateProxyTypeAdapter;
+import com.vgamebase.model.Comment;
 import com.vgamebase.model.Game;
 import com.vgamebase.model.GamePlatform;
 import com.vgamebase.model.GamePublisher;
 import com.vgamebase.model.Image;
 import com.vgamebase.model.RegionSales;
+import com.vgamebase.model.User;
+import com.vgamebase.model.Vote;
 import com.vgamebase.model.datatable.DeleteImage;
+import com.vgamebase.services.CommentService;
 import com.vgamebase.services.GameService;
 import com.vgamebase.services.ImageService;
 import com.vgamebase.services.MaestrosService;
+import com.vgamebase.services.VoteService;
+import com.vgamebase.services.impl.UserServiceImpl;
 import com.vgamebase.servlet.validator.GameValidator;
 
 @Controller("gameController")
@@ -41,6 +49,15 @@ public class GameController {
 
 	@Autowired
 	private ImageService imageService;
+	
+	@Autowired
+	private CommentService commentService;
+	
+	@Autowired
+	private UserServiceImpl userService;
+	
+	@Autowired
+	private VoteService voteService;
 
 	public void insertGame(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
@@ -258,8 +275,6 @@ public class GameController {
 		
 		String imageId = request.getParameter("key");
 		
-		DeleteImage deleteImage = new DeleteImage();
-		
 		imageService.delete(imageService.findByPk(Long.valueOf(imageId)));
 		
 		response.setContentType("application/json");
@@ -271,6 +286,83 @@ public class GameController {
 		Gson gson = new GsonBuilder().registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY).create();
 		out.print(gson.toJson(s));
 		out.flush();
+		
+	}
+	
+	public void postComment(HttpServletRequest request, HttpServletResponse response) {
+		
+		String id = request.getParameter("id");
+		String comment = request.getParameter("comment");
+		
+		Comment newComment = new Comment();
+		
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		UserDetails principalUser = (UserDetails) principal;
+		User user = userService.findByUsername(principalUser.getUsername());
+		
+		newComment.setGame(maestrosService.findGamePlatformByPk(Long.valueOf(id)));
+		newComment.setText(comment);
+		newComment.setUser(user);
+		
+		commentService.save(newComment);
+		
+		HttpSession session = request.getSession();
+
+		session.setAttribute("postedComment", "true");
+		session.setAttribute("user", user);
+	}
+	
+	public void deleteComment(HttpServletRequest request, HttpServletResponse response) {
+		
+		String id = request.getParameter("id");
+		
+		Comment comment = commentService.findByPk(Long.valueOf(id));
+		
+		commentService.delete(comment);
+		
+		HttpSession session = request.getSession();
+		
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		UserDetails principalUser = (UserDetails) principal;
+		User user = userService.findByUsername(principalUser.getUsername());
+		
+		session.setAttribute("user", user);
+		
+	}
+	
+	public void postVote(HttpServletRequest request, HttpServletResponse response) {
+		
+		String id = request.getParameter("id");
+		String vote = request.getParameter("vote");
+		
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		UserDetails principalUser = (UserDetails) principal;
+		User user = userService.findByUsername(principalUser.getUsername());
+		
+		if(voteService.findByUserAndGamePlatform(user, maestrosService.findGamePlatformByPk(Long.valueOf(id))) == null) {
+			
+			Vote newVote = new Vote();
+			
+			newVote.setText(vote);
+			newVote.setGame(maestrosService.findGamePlatformByPk(Long.valueOf(id)));
+			newVote.setUser(user);
+			
+			voteService.save(newVote);
+			
+		} else {
+			
+			Vote newVote = voteService.findByUserAndGamePlatform(user, maestrosService.findGamePlatformByPk(Long.valueOf(id)));
+			
+			newVote.setText(vote);
+			
+			voteService.update(newVote);
+			
+		}
+		
+		HttpSession session = request.getSession();
+
+		session.setAttribute("postedVote", "true");
+		session.setAttribute("user", user);
 		
 	}
 

@@ -1,4 +1,8 @@
 <%@page import="java.nio.charset.StandardCharsets"%>
+<%@page import="org.springframework.security.core.context.SecurityContextHolder" %>
+<%@page import="org.springframework.security.core.userdetails.UserDetails" %>
+<%@page import="org.springframework.security.core.authority.SimpleGrantedAuthority"%>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -31,6 +35,15 @@
         </div>
     </div>
 </div>
+	<%
+	
+		UserDetails principalUser = null;
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		if (principal instanceof UserDetails) {
+			principalUser = ((UserDetails) principal);
+		} 
+
+	%>
 	<jsp:include page="layout/header.jsp" />
 	<div class="row" style="min-height: 100%">
 		<div class="col-md-2"></div>
@@ -116,6 +129,7 @@
 								var platforms = json.filters.platforms;
 								var publishers = json.filters.publishers;
 								var releaseYears = json.filters.releaseYears;
+								 <% if(principalUser != null && principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Admin")) || principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Manager")) ){ %>
 								this
 										.api()
 										.columns(1)
@@ -143,6 +157,7 @@
 																				.draw();
 																	});
 												});
+								<%} %>
 								this
 										.api()
 										.columns(2)
@@ -338,6 +353,7 @@
 										"targets" : 6,
 										"searchable" : false
 									},
+									<% if(principalUser != null && principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Admin")) || principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Manager")) ){ %>
 									{
 										"title" : "Actions",
 										"targets" : 7,
@@ -346,13 +362,37 @@
 										"searchable" : false,
 										"render" : function(data, type, row,
 												meta) {
-											return '<a role="button" class="btn btn-danger botonVerGame" data-id='
+											return  '<a role="button" class="btn btn-danger botonVerGame" data-id='
 													+ data
 													+ ' href="./games?view=gameAdmin&id='
 													+ data
-													+ '"><span class=\"glyphicon glyphicon-eye-open text-dark\"></span></a> <button class="btn btn-danger botonEliminar" data-id='+data+' data-toggle=\"modal\" data-target=\"#deleteGameModal\"><span class=\"glyphicon glyphicon-trash text-dark\"></span></button>'
+													+ '"><span class=\"glyphicon glyphicon-eye-open text-dark\"></span></a> '
+													
+													+ '<button class="btn btn-danger botonEliminar" data-id='+data+' data-toggle=\"modal\" data-target=\"#deleteGameModal\"><span class=\"glyphicon glyphicon-trash text-dark\"></span></button>'
 										}
-									} ],
+									}
+									<% } %>
+									<% if(principalUser != null && principalUser.getAuthorities().contains(new SimpleGrantedAuthority("User")) || principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Moderator")) ){ %>
+									
+									{
+										"title" : "Actions",
+										"targets" : 7,
+										"data" : 0,
+										"orderable" : false,
+										"searchable" : false,
+										"render" : function(data, type, row,
+												meta) {
+											return  '<a role="button" class="btn btn-danger botonVerGame" data-id='
+											+ data
+											+ ' href="./games?view=game&id='
+											+ data
+											+ '"><span class=\"glyphicon glyphicon-eye-open text-dark\"></span></a>'											
+											
+										}
+									}
+									
+									<% } %>
+									],
 								    searchCols: [
 								        null,
 								        {'search': 'true' },

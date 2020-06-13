@@ -1,3 +1,16 @@
+<%@page import="com.vgamebase.model.User"%>
+<%@page import="org.springframework.security.core.context.SecurityContextHolder" %>
+<%@page import="org.springframework.security.core.userdetails.UserDetails" %>
+<%@page import="org.springframework.security.core.authority.SimpleGrantedAuthority"%>
+	<%
+	
+		UserDetails principalUser = null;
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		if (principal instanceof UserDetails) {
+			principalUser = ((UserDetails) principal);
+		} 
+
+	%>
 <nav
 	class="navbar navbar-expand-lg py-3 navbar-dark bg-danger shadow-sm border-bottom border-light rounded-lg">
 	<div class="col-md-3 d-flex justify-content-center">
@@ -20,16 +33,31 @@
 				<li class="nav-item active border border-Light px-5"><a
 					href="./platforms" class="nav-link"><img src="img/device.png">
 						Platforms </a></li>
+				<% if(principalUser != null && principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Admin"))){ %>		
 				<li class="nav-item active border border-Light px-5"><a
 					href="./admin" class="nav-link"><img src="img/admin.png">
 						Admin</a></li>
+				<% } else { %>
+				<li class="nav-item active border border-Light px-5"><a
+					href="./user" class="nav-link"><img src="img/user.png">
+						User</a></li>		
+				<% } %>		
 			</ul>
 		</div>
 	</div>
+	<% 
+		String username = "";
+		User userheader = (User) session.getAttribute("user");
+		if(userheader == null) {
+			username = "visitor";
+		} else {
+			username = userheader.getUserName();
+		}
+	%>
 	<div class="col-md-3 d-flex justify-content-center">
 		<ul class="navbar-nav d-flex justify-content-end">
 			<li><p class="mr-3 mt-3 text-white">
-					Welcome, <b>X</b> . There are <b><span id="onlineusers">...</span></b>
+					Welcome, <b><%=username%></b> . There are <b><span id="onlineusers">...</span></b>
 					users online.
 				</p></li>
 			<li><a href="./logout" id="logout"

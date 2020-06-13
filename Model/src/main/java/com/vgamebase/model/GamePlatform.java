@@ -2,6 +2,7 @@ package com.vgamebase.model;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -137,6 +138,30 @@ public class GamePlatform implements Serializable {
 	public String toString() {
 		return "GamePlatform [id=" + id + ", releaseYear=" + releaseYear + ", gamepublisher=" + gamepublisher
 				+ ", platform=" + platform + "]";
+	}
+	
+	public int getLikes() {
+		
+		int likes = 0;
+		
+		List<Vote> votes = this.votes;
+		
+		likes = (int) votes.stream().filter( v -> v.getVote().equals("like")).count();
+		
+		return likes;
+		
+	}
+	
+	public int getDislikes() {
+		
+		int dislikes = 0;
+		
+		List<Vote> votes = this.votes;
+		
+		dislikes = (int) votes.stream().filter( v -> v.getVote().equals("dislike")).count();
+		
+		return dislikes;
+		
 	}
 	
 }

@@ -1,0 +1,2310 @@
+[
+	{
+		"id" : 1,
+		"publisher_name" : "10TACLE Studios"
+	},
+	{
+		"id" : 2,
+		"publisher_name" : "1C Company"
+	},
+	{
+		"id" : 3,
+		"publisher_name" : "20th Century Fox Video Games"
+	},
+	{
+		"id" : 4,
+		"publisher_name" : "2D Boy"
+	},
+	{
+		"id" : 5,
+		"publisher_name" : "3DO"
+	},
+	{
+		"id" : 6,
+		"publisher_name" : "49Games"
+	},
+	{
+		"id" : 7,
+		"publisher_name" : "505 Games"
+	},
+	{
+		"id" : 8,
+		"publisher_name" : "5pb"
+	},
+	{
+		"id" : 9,
+		"publisher_name" : "7G//AMES"
+	},
+	{
+		"id" : 10,
+		"publisher_name" : "989 Sports"
+	},
+	{
+		"id" : 11,
+		"publisher_name" : "989 Studios"
+	},
+	{
+		"id" : 12,
+		"publisher_name" : "Abylight"
+	},
+	{
+		"id" : 13,
+		"publisher_name" : "Acclaim Entertainment"
+	},
+	{
+		"id" : 14,
+		"publisher_name" : "Accolade"
+	},
+	{
+		"id" : 15,
+		"publisher_name" : "Ackkstudios"
+	},
+	{
+		"id" : 16,
+		"publisher_name" : "Acquire"
+	},
+	{
+		"id" : 17,
+		"publisher_name" : "Activision"
+	},
+	{
+		"id" : 18,
+		"publisher_name" : "Activision Blizzard"
+	},
+	{
+		"id" : 19,
+		"publisher_name" : "Activision Value"
+	},
+	{
+		"id" : 20,
+		"publisher_name" : "Adeline Software"
+	},
+	{
+		"id" : 21,
+		"publisher_name" : "Aerosoft"
+	},
+	{
+		"id" : 22,
+		"publisher_name" : "Agatsuma Entertainment"
+	},
+	{
+		"id" : 23,
+		"publisher_name" : "Agetec"
+	},
+	{
+		"id" : 24,
+		"publisher_name" : "Aksys Games"
+	},
+	{
+		"id" : 25,
+		"publisher_name" : "Alawar Entertainment"
+	},
+	{
+		"id" : 26,
+		"publisher_name" : "Alchemist"
+	},
+	{
+		"id" : 27,
+		"publisher_name" : "Alternative Software"
+	},
+	{
+		"id" : 28,
+		"publisher_name" : "Altron"
+	},
+	{
+		"id" : 29,
+		"publisher_name" : "Alvion"
+	},
+	{
+		"id" : 30,
+		"publisher_name" : "American Softworks"
+	},
+	{
+		"id" : 31,
+		"publisher_name" : "Angel Studios"
+	},
+	{
+		"id" : 32,
+		"publisher_name" : "Answer Software"
+	},
+	{
+		"id" : 33,
+		"publisher_name" : "AQ Interactive"
+	},
+	{
+		"id" : 34,
+		"publisher_name" : "Aqua Plus"
+	},
+	{
+		"id" : 35,
+		"publisher_name" : "Aques"
+	},
+	{
+		"id" : 36,
+		"publisher_name" : "Arc System Works"
+	},
+	{
+		"id" : 37,
+		"publisher_name" : "Arena Entertainment"
+	},
+	{
+		"id" : 38,
+		"publisher_name" : "Aria"
+	},
+	{
+		"id" : 39,
+		"publisher_name" : "Arika"
+	},
+	{
+		"id" : 40,
+		"publisher_name" : "ArtDink"
+	},
+	{
+		"id" : 41,
+		"publisher_name" : "Aruze Corp"
+	},
+	{
+		"id" : 42,
+		"publisher_name" : "ASC Games"
+	},
+	{
+		"id" : 43,
+		"publisher_name" : "Ascaron Entertainment"
+	},
+	{
+		"id" : 44,
+		"publisher_name" : "Ascaron Entertainment GmbH"
+	},
+	{
+		"id" : 45,
+		"publisher_name" : "ASCII Entertainment"
+	},
+	{
+		"id" : 46,
+		"publisher_name" : "ASCII Media Works"
+	},
+	{
+		"id" : 47,
+		"publisher_name" : "Asgard"
+	},
+	{
+		"id" : 48,
+		"publisher_name" : "ASK"
+	},
+	{
+		"id" : 49,
+		"publisher_name" : "Asmik Ace Entertainment"
+	},
+	{
+		"id" : 50,
+		"publisher_name" : "Asmik Corp"
+	},
+	{
+		"id" : 51,
+		"publisher_name" : "Aspyr"
+	},
+	{
+		"id" : 52,
+		"publisher_name" : "Astragon"
+	},
+	{
+		"id" : 53,
+		"publisher_name" : "Asylum Entertainment"
+	},
+	{
+		"id" : 54,
+		"publisher_name" : "Atari"
+	},
+	{
+		"id" : 55,
+		"publisher_name" : "Athena"
+	},
+	{
+		"id" : 56,
+		"publisher_name" : "Atlus"
+	},
+	{
+		"id" : 57,
+		"publisher_name" : "Avalon Interactive"
+	},
+	{
+		"id" : 58,
+		"publisher_name" : "Avanquest"
+	},
+	{
+		"id" : 59,
+		"publisher_name" : "Avanquest Software"
+	},
+	{
+		"id" : 60,
+		"publisher_name" : "Axela"
+	},
+	{
+		"id" : 61,
+		"publisher_name" : "BAM! Entertainment"
+	},
+	{
+		"id" : 62,
+		"publisher_name" : "Banpresto"
+	},
+	{
+		"id" : 63,
+		"publisher_name" : "Benesse"
+	},
+	{
+		"id" : 64,
+		"publisher_name" : "Berkeley"
+	},
+	{
+		"id" : 65,
+		"publisher_name" : "Bethesda Softworks"
+	},
+	{
+		"id" : 66,
+		"publisher_name" : "Big Ben Interactive"
+	},
+	{
+		"id" : 67,
+		"publisher_name" : "Big Fish Games"
+	},
+	{
+		"id" : 68,
+		"publisher_name" : "Bigben Interactive"
+	},
+	{
+		"id" : 69,
+		"publisher_name" : "bitComposer Games"
+	},
+	{
+		"id" : 70,
+		"publisher_name" : "Black Bean Games"
+	},
+	{
+		"id" : 71,
+		"publisher_name" : "Black Label Games"
+	},
+	{
+		"id" : 72,
+		"publisher_name" : "Blast! Entertainment Ltd"
+	},
+	{
+		"id" : 73,
+		"publisher_name" : "Blue Byte"
+	},
+	{
+		"id" : 74,
+		"publisher_name" : "BMG Interactive Entertainment"
+	},
+	{
+		"id" : 75,
+		"publisher_name" : "Bohemia Interactive"
+	},
+	{
+		"id" : 76,
+		"publisher_name" : "Bomb"
+	},
+	{
+		"id" : 77,
+		"publisher_name" : "Boost On"
+	},
+	{
+		"id" : 78,
+		"publisher_name" : "BPS"
+	},
+	{
+		"id" : 79,
+		"publisher_name" : "Brash Entertainment"
+	},
+	{
+		"id" : 80,
+		"publisher_name" : "Broccoli"
+	},
+	{
+		"id" : 81,
+		"publisher_name" : "BushiRoad"
+	},
+	{
+		"id" : 82,
+		"publisher_name" : "Capcom"
+	},
+	{
+		"id" : 83,
+		"publisher_name" : "Cave"
+	},
+	{
+		"id" : 84,
+		"publisher_name" : "CBS Electronics"
+	},
+	{
+		"id" : 85,
+		"publisher_name" : "CCP"
+	},
+	{
+		"id" : 86,
+		"publisher_name" : "CDV Software Entertainment"
+	},
+	{
+		"id" : 87,
+		"publisher_name" : "ChunSoft"
+	},
+	{
+		"id" : 88,
+		"publisher_name" : "City Interactive"
+	},
+	{
+		"id" : 89,
+		"publisher_name" : "Cloud Imperium Games Corporation"
+	},
+	{
+		"id" : 90,
+		"publisher_name" : "Coconuts Japan"
+	},
+	{
+		"id" : 91,
+		"publisher_name" : "Codemasters"
+	},
+	{
+		"id" : 92,
+		"publisher_name" : "Codemasters Online"
+	},
+	{
+		"id" : 93,
+		"publisher_name" : "CokeM Interactive"
+	},
+	{
+		"id" : 94,
+		"publisher_name" : "Coleco"
+	},
+	{
+		"id" : 95,
+		"publisher_name" : "Comfort"
+	},
+	{
+		"id" : 96,
+		"publisher_name" : "Commseed"
+	},
+	{
+		"id" : 97,
+		"publisher_name" : "Compile"
+	},
+	{
+		"id" : 98,
+		"publisher_name" : "Compile Heart"
+	},
+	{
+		"id" : 99,
+		"publisher_name" : "Conspiracy Entertainment"
+	},
+	{
+		"id" : 100,
+		"publisher_name" : "Core Design Ltd."
+	},
+	{
+		"id" : 101,
+		"publisher_name" : "CPG Products"
+	},
+	{
+		"id" : 102,
+		"publisher_name" : "Crave Entertainment"
+	},
+	{
+		"id" : 103,
+		"publisher_name" : "Creative Core"
+	},
+	{
+		"id" : 104,
+		"publisher_name" : "Crimson Cow"
+	},
+	{
+		"id" : 105,
+		"publisher_name" : "Crystal Dynamics"
+	},
+	{
+		"id" : 106,
+		"publisher_name" : "CTO SpA"
+	},
+	{
+		"id" : 107,
+		"publisher_name" : "Culture Brain"
+	},
+	{
+		"id" : 108,
+		"publisher_name" : "Culture Publishers"
+	},
+	{
+		"id" : 109,
+		"publisher_name" : "CyberFront"
+	},
+	{
+		"id" : 110,
+		"publisher_name" : "Cygames"
+	},
+	{
+		"id" : 111,
+		"publisher_name" : "D3Publisher"
+	},
+	{
+		"id" : 112,
+		"publisher_name" : "Daedalic"
+	},
+	{
+		"id" : 113,
+		"publisher_name" : "Daedalic Entertainment"
+	},
+	{
+		"id" : 114,
+		"publisher_name" : "Daito"
+	},
+	{
+		"id" : 115,
+		"publisher_name" : "Data Age"
+	},
+	{
+		"id" : 116,
+		"publisher_name" : "Data Design Interactive"
+	},
+	{
+		"id" : 117,
+		"publisher_name" : "Data East"
+	},
+	{
+		"id" : 118,
+		"publisher_name" : "Datam Polystar"
+	},
+	{
+		"id" : 119,
+		"publisher_name" : "Deep Silver"
+	},
+	{
+		"id" : 120,
+		"publisher_name" : "Destination Software, Inc"
+	},
+	{
+		"id" : 121,
+		"publisher_name" : "Destineer"
+	},
+	{
+		"id" : 122,
+		"publisher_name" : "Detn8 Games"
+	},
+	{
+		"id" : 123,
+		"publisher_name" : "Devolver Digital"
+	},
+	{
+		"id" : 124,
+		"publisher_name" : "DHM Interactive"
+	},
+	{
+		"id" : 125,
+		"publisher_name" : "DigiCube"
+	},
+	{
+		"id" : 126,
+		"publisher_name" : "Disney Interactive Studios"
+	},
+	{
+		"id" : 127,
+		"publisher_name" : "Dorart"
+	},
+	{
+		"id" : 128,
+		"publisher_name" : "dramatic create"
+	},
+	{
+		"id" : 129,
+		"publisher_name" : "DreamCatcher Interactive"
+	},
+	{
+		"id" : 130,
+		"publisher_name" : "DreamWorks Interactive"
+	},
+	{
+		"id" : 131,
+		"publisher_name" : "DSI Games"
+	},
+	{
+		"id" : 132,
+		"publisher_name" : "DTP Entertainment"
+	},
+	{
+		"id" : 133,
+		"publisher_name" : "Dusenberry Martin Racing"
+	},
+	{
+		"id" : 134,
+		"publisher_name" : "EA Games"
+	},
+	{
+		"id" : 135,
+		"publisher_name" : "Easy Interactive"
+	},
+	{
+		"id" : 136,
+		"publisher_name" : "Ecole"
+	},
+	{
+		"id" : 137,
+		"publisher_name" : "Edia"
+	},
+	{
+		"id" : 138,
+		"publisher_name" : "Eidos Interactive"
+	},
+	{
+		"id" : 139,
+		"publisher_name" : "Electronic Arts"
+	},
+	{
+		"id" : 140,
+		"publisher_name" : "Electronic Arts Victor"
+	},
+	{
+		"id" : 141,
+		"publisher_name" : "Elf"
+	},
+	{
+		"id" : 142,
+		"publisher_name" : "Elite"
+	},
+	{
+		"id" : 143,
+		"publisher_name" : "Empire Interactive"
+	},
+	{
+		"id" : 144,
+		"publisher_name" : "Encore"
+	},
+	{
+		"id" : 145,
+		"publisher_name" : "Enix Corporation"
+	},
+	{
+		"id" : 146,
+		"publisher_name" : "Enjoy Gaming ltd."
+	},
+	{
+		"id" : 147,
+		"publisher_name" : "Enterbrain"
+	},
+	{
+		"id" : 148,
+		"publisher_name" : "EON Digital Entertainment"
+	},
+	{
+		"id" : 149,
+		"publisher_name" : "Epic Games"
+	},
+	{
+		"id" : 150,
+		"publisher_name" : "Epoch"
+	},
+	{
+		"id" : 151,
+		"publisher_name" : "Ertain"
+	},
+	{
+		"id" : 152,
+		"publisher_name" : "ESP"
+	},
+	{
+		"id" : 153,
+		"publisher_name" : "Essential Games"
+	},
+	{
+		"id" : 154,
+		"publisher_name" : "Evolution Games"
+	},
+	{
+		"id" : 155,
+		"publisher_name" : "Evolved Games"
+	},
+	{
+		"id" : 156,
+		"publisher_name" : "Excalibur Publishing"
+	},
+	{
+		"id" : 157,
+		"publisher_name" : "Experience Inc."
+	},
+	{
+		"id" : 158,
+		"publisher_name" : "Extreme Entertainment Group"
+	},
+	{
+		"id" : 159,
+		"publisher_name" : "Falcom Corporation"
+	},
+	{
+		"id" : 160,
+		"publisher_name" : "Fields"
+	},
+	{
+		"id" : 161,
+		"publisher_name" : "Flashpoint Games"
+	},
+	{
+		"id" : 162,
+		"publisher_name" : "Flight-Plan"
+	},
+	{
+		"id" : 163,
+		"publisher_name" : "Focus Home Interactive"
+	},
+	{
+		"id" : 164,
+		"publisher_name" : "Focus Multimedia"
+	},
+	{
+		"id" : 165,
+		"publisher_name" : "fonfun"
+	},
+	{
+		"id" : 166,
+		"publisher_name" : "Foreign Media Games"
+	},
+	{
+		"id" : 167,
+		"publisher_name" : "Fortyfive"
+	},
+	{
+		"id" : 168,
+		"publisher_name" : "Fox Interactive"
+	},
+	{
+		"id" : 169,
+		"publisher_name" : "From Software"
+	},
+	{
+		"id" : 170,
+		"publisher_name" : "Fuji"
+	},
+	{
+		"id" : 171,
+		"publisher_name" : "Funbox Media"
+	},
+	{
+		"id" : 172,
+		"publisher_name" : "Funcom"
+	},
+	{
+		"id" : 173,
+		"publisher_name" : "FunSoft"
+	},
+	{
+		"id" : 174,
+		"publisher_name" : "Funsta"
+	},
+	{
+		"id" : 175,
+		"publisher_name" : "FuRyu"
+	},
+	{
+		"id" : 176,
+		"publisher_name" : "FuRyu Corporation"
+	},
+	{
+		"id" : 177,
+		"publisher_name" : "G.Rev"
+	},
+	{
+		"id" : 178,
+		"publisher_name" : "Gaga"
+	},
+	{
+		"id" : 179,
+		"publisher_name" : "Gainax Network Systems"
+	},
+	{
+		"id" : 180,
+		"publisher_name" : "Gakken"
+	},
+	{
+		"id" : 181,
+		"publisher_name" : "Game Arts"
+	},
+	{
+		"id" : 182,
+		"publisher_name" : "Game Factory"
+	},
+	{
+		"id" : 183,
+		"publisher_name" : "Game Life"
+	},
+	{
+		"id" : 184,
+		"publisher_name" : "Gamebridge"
+	},
+	{
+		"id" : 185,
+		"publisher_name" : "Gamecock"
+	},
+	{
+		"id" : 186,
+		"publisher_name" : "Gameloft"
+	},
+	{
+		"id" : 187,
+		"publisher_name" : "GameMill Entertainment"
+	},
+	{
+		"id" : 188,
+		"publisher_name" : "GameTek"
+	},
+	{
+		"id" : 189,
+		"publisher_name" : "Gathering of Developers"
+	},
+	{
+		"id" : 190,
+		"publisher_name" : "General Entertainment"
+	},
+	{
+		"id" : 191,
+		"publisher_name" : "Genki"
+	},
+	{
+		"id" : 192,
+		"publisher_name" : "Genterprise"
+	},
+	{
+		"id" : 193,
+		"publisher_name" : "Ghostlight"
+	},
+	{
+		"id" : 194,
+		"publisher_name" : "Giga"
+	},
+	{
+		"id" : 195,
+		"publisher_name" : "Giza10"
+	},
+	{
+		"id" : 196,
+		"publisher_name" : "Glams"
+	},
+	{
+		"id" : 197,
+		"publisher_name" : "Global A Entertainment"
+	},
+	{
+		"id" : 198,
+		"publisher_name" : "Global Star"
+	},
+	{
+		"id" : 199,
+		"publisher_name" : "GN Software"
+	},
+	{
+		"id" : 200,
+		"publisher_name" : "GOA"
+	},
+	{
+		"id" : 201,
+		"publisher_name" : "Gotham Games"
+	},
+	{
+		"id" : 202,
+		"publisher_name" : "Graffiti"
+	},
+	{
+		"id" : 203,
+		"publisher_name" : "Grand Prix Games"
+	},
+	{
+		"id" : 204,
+		"publisher_name" : "Graphsim Entertainment"
+	},
+	{
+		"id" : 205,
+		"publisher_name" : "Gremlin Interactive Ltd"
+	},
+	{
+		"id" : 206,
+		"publisher_name" : "Griffin International"
+	},
+	{
+		"id" : 207,
+		"publisher_name" : "Groove Games"
+	},
+	{
+		"id" : 208,
+		"publisher_name" : "GSP"
+	},
+	{
+		"id" : 209,
+		"publisher_name" : "GT Interactive"
+	},
+	{
+		"id" : 210,
+		"publisher_name" : "GungHo"
+	},
+	{
+		"id" : 211,
+		"publisher_name" : "Gust"
+	},
+	{
+		"id" : 212,
+		"publisher_name" : "Hackberry"
+	},
+	{
+		"id" : 213,
+		"publisher_name" : "HAL Laboratory"
+	},
+	{
+		"id" : 214,
+		"publisher_name" : "Hamster Corporation"
+	},
+	{
+		"id" : 215,
+		"publisher_name" : "Happinet"
+	},
+	{
+		"id" : 216,
+		"publisher_name" : "Harmonix Music Systems"
+	},
+	{
+		"id" : 217,
+		"publisher_name" : "Hasbro Interactive"
+	},
+	{
+		"id" : 218,
+		"publisher_name" : "Havas Interactive"
+	},
+	{
+		"id" : 219,
+		"publisher_name" : "Headup Games"
+	},
+	{
+		"id" : 220,
+		"publisher_name" : "Hearty Robin"
+	},
+	{
+		"id" : 221,
+		"publisher_name" : "Hect"
+	},
+	{
+		"id" : 222,
+		"publisher_name" : "Hello Games"
+	},
+	{
+		"id" : 223,
+		"publisher_name" : "Her Interactive"
+	},
+	{
+		"id" : 224,
+		"publisher_name" : "Hip Interactive"
+	},
+	{
+		"id" : 225,
+		"publisher_name" : "HMH Interactive"
+	},
+	{
+		"id" : 226,
+		"publisher_name" : "Home Entertainment Suppliers"
+	},
+	{
+		"id" : 227,
+		"publisher_name" : "Hudson Entertainment"
+	},
+	{
+		"id" : 228,
+		"publisher_name" : "Hudson Soft"
+	},
+	{
+		"id" : 229,
+		"publisher_name" : "Human Entertainment"
+	},
+	{
+		"id" : 230,
+		"publisher_name" : "HuneX"
+	},
+	{
+		"id" : 231,
+		"publisher_name" : "Iceberg Interactive"
+	},
+	{
+		"id" : 232,
+		"publisher_name" : "id Software"
+	},
+	{
+		"id" : 233,
+		"publisher_name" : "Idea Factory"
+	},
+	{
+		"id" : 234,
+		"publisher_name" : "Idea Factory International"
+	},
+	{
+		"id" : 235,
+		"publisher_name" : "IE Institute"
+	},
+	{
+		"id" : 236,
+		"publisher_name" : "Ignition Entertainment"
+	},
+	{
+		"id" : 237,
+		"publisher_name" : "Illusion Softworks"
+	},
+	{
+		"id" : 238,
+		"publisher_name" : "Imadio"
+	},
+	{
+		"id" : 239,
+		"publisher_name" : "Image Epoch"
+	},
+	{
+		"id" : 240,
+		"publisher_name" : "imageepoch Inc."
+	},
+	{
+		"id" : 241,
+		"publisher_name" : "Imageworks"
+	},
+	{
+		"id" : 242,
+		"publisher_name" : "Imagic"
+	},
+	{
+		"id" : 243,
+		"publisher_name" : "Imagineer"
+	},
+	{
+		"id" : 244,
+		"publisher_name" : "Imax"
+	},
+	{
+		"id" : 245,
+		"publisher_name" : "Indie Games"
+	},
+	{
+		"id" : 246,
+		"publisher_name" : "Infogrames"
+	},
+	{
+		"id" : 247,
+		"publisher_name" : "Insomniac Games"
+	},
+	{
+		"id" : 248,
+		"publisher_name" : "Interchannel"
+	},
+	{
+		"id" : 249,
+		"publisher_name" : "Interchannel-Holon"
+	},
+	{
+		"id" : 250,
+		"publisher_name" : "Intergrow"
+	},
+	{
+		"id" : 251,
+		"publisher_name" : "Interplay"
+	},
+	{
+		"id" : 252,
+		"publisher_name" : "Interplay Productions"
+	},
+	{
+		"id" : 253,
+		"publisher_name" : "Interworks Unlimited, Inc."
+	},
+	{
+		"id" : 254,
+		"publisher_name" : "Inti Creates"
+	},
+	{
+		"id" : 255,
+		"publisher_name" : "Introversion Software"
+	},
+	{
+		"id" : 256,
+		"publisher_name" : "inXile Entertainment"
+	},
+	{
+		"id" : 257,
+		"publisher_name" : "Irem Software Engineering"
+	},
+	{
+		"id" : 258,
+		"publisher_name" : "ITT Family Games"
+	},
+	{
+		"id" : 259,
+		"publisher_name" : "Ivolgamus"
+	},
+	{
+		"id" : 260,
+		"publisher_name" : "iWin"
+	},
+	{
+		"id" : 261,
+		"publisher_name" : "Jack of All Games"
+	},
+	{
+		"id" : 262,
+		"publisher_name" : "Jaleco"
+	},
+	{
+		"id" : 263,
+		"publisher_name" : "Jester Interactive"
+	},
+	{
+		"id" : 264,
+		"publisher_name" : "Jorudan"
+	},
+	{
+		"id" : 265,
+		"publisher_name" : "JoWood Productions"
+	},
+	{
+		"id" : 266,
+		"publisher_name" : "Just Flight"
+	},
+	{
+		"id" : 267,
+		"publisher_name" : "JVC"
+	},
+	{
+		"id" : 268,
+		"publisher_name" : "Kadokawa Games"
+	},
+	{
+		"id" : 269,
+		"publisher_name" : "Kadokawa Shoten"
+	},
+	{
+		"id" : 270,
+		"publisher_name" : "Kaga Create"
+	},
+	{
+		"id" : 271,
+		"publisher_name" : "Kalypso Media"
+	},
+	{
+		"id" : 272,
+		"publisher_name" : "Kamui"
+	},
+	{
+		"id" : 273,
+		"publisher_name" : "Kando Games"
+	},
+	{
+		"id" : 274,
+		"publisher_name" : "Karin Entertainment"
+	},
+	{
+		"id" : 275,
+		"publisher_name" : "Kemco"
+	},
+	{
+		"id" : 276,
+		"publisher_name" : "KID"
+	},
+	{
+		"id" : 277,
+		"publisher_name" : "Kids Station"
+	},
+	{
+		"id" : 278,
+		"publisher_name" : "King Records"
+	},
+	{
+		"id" : 279,
+		"publisher_name" : "Knowledge Adventure"
+	},
+	{
+		"id" : 280,
+		"publisher_name" : "Koch Media"
+	},
+	{
+		"id" : 281,
+		"publisher_name" : "Kokopeli Digital Studios"
+	},
+	{
+		"id" : 282,
+		"publisher_name" : "Konami Digital Entertainment"
+	},
+	{
+		"id" : 283,
+		"publisher_name" : "Kool Kizz"
+	},
+	{
+		"id" : 284,
+		"publisher_name" : "KSS"
+	},
+	{
+		"id" : 285,
+		"publisher_name" : "Laguna"
+	},
+	{
+		"id" : 286,
+		"publisher_name" : "Legacy Interactive"
+	},
+	{
+		"id" : 287,
+		"publisher_name" : "LEGO Media"
+	},
+	{
+		"id" : 288,
+		"publisher_name" : "Level 5"
+	},
+	{
+		"id" : 289,
+		"publisher_name" : "Lexicon Entertainment"
+	},
+	{
+		"id" : 290,
+		"publisher_name" : "Licensed 4U"
+	},
+	{
+		"id" : 291,
+		"publisher_name" : "Lighthouse Interactive"
+	},
+	{
+		"id" : 292,
+		"publisher_name" : "Liquid Games"
+	},
+	{
+		"id" : 293,
+		"publisher_name" : "Little Orbit"
+	},
+	{
+		"id" : 294,
+		"publisher_name" : "Locus"
+	},
+	{
+		"id" : 295,
+		"publisher_name" : "LSP Games"
+	},
+	{
+		"id" : 296,
+		"publisher_name" : "LucasArts"
+	},
+	{
+		"id" : 297,
+		"publisher_name" : "Mad Catz"
+	},
+	{
+		"id" : 298,
+		"publisher_name" : "Magical Company"
+	},
+	{
+		"id" : 299,
+		"publisher_name" : "Magix"
+	},
+	{
+		"id" : 300,
+		"publisher_name" : "Majesco Entertainment"
+	},
+	{
+		"id" : 301,
+		"publisher_name" : "Mamba Games"
+	},
+	{
+		"id" : 302,
+		"publisher_name" : "Marvel Entertainment"
+	},
+	{
+		"id" : 303,
+		"publisher_name" : "Marvelous Entertainment"
+	},
+	{
+		"id" : 304,
+		"publisher_name" : "Marvelous Games"
+	},
+	{
+		"id" : 305,
+		"publisher_name" : "Marvelous Interactive"
+	},
+	{
+		"id" : 306,
+		"publisher_name" : "Masque Publishing"
+	},
+	{
+		"id" : 307,
+		"publisher_name" : "Mastertronic"
+	},
+	{
+		"id" : 308,
+		"publisher_name" : "Mastiff"
+	},
+	{
+		"id" : 309,
+		"publisher_name" : "Mattel Interactive"
+	},
+	{
+		"id" : 310,
+		"publisher_name" : "Max Five"
+	},
+	{
+		"id" : 311,
+		"publisher_name" : "Maximum Family Games"
+	},
+	{
+		"id" : 312,
+		"publisher_name" : "Maxis"
+	},
+	{
+		"id" : 313,
+		"publisher_name" : "MC2 Entertainment"
+	},
+	{
+		"id" : 314,
+		"publisher_name" : "Media Entertainment"
+	},
+	{
+		"id" : 315,
+		"publisher_name" : "Media Factory"
+	},
+	{
+		"id" : 316,
+		"publisher_name" : "Media Rings"
+	},
+	{
+		"id" : 317,
+		"publisher_name" : "Media Works"
+	},
+	{
+		"id" : 318,
+		"publisher_name" : "MediaQuest"
+	},
+	{
+		"id" : 319,
+		"publisher_name" : "Men-A-Vision"
+	},
+	{
+		"id" : 320,
+		"publisher_name" : "Mentor Interactive"
+	},
+	{
+		"id" : 321,
+		"publisher_name" : "Mercury Games"
+	},
+	{
+		"id" : 322,
+		"publisher_name" : "Merscom LLC"
+	},
+	{
+		"id" : 323,
+		"publisher_name" : "Metro 3D"
+	},
+	{
+		"id" : 324,
+		"publisher_name" : "Michaelsoft"
+	},
+	{
+		"id" : 325,
+		"publisher_name" : "Micro Cabin"
+	},
+	{
+		"id" : 326,
+		"publisher_name" : "Microids"
+	},
+	{
+		"id" : 327,
+		"publisher_name" : "Microprose"
+	},
+	{
+		"id" : 328,
+		"publisher_name" : "Microsoft Game Studios"
+	},
+	{
+		"id" : 329,
+		"publisher_name" : "Midas Interactive Entertainment"
+	},
+	{
+		"id" : 330,
+		"publisher_name" : "Midway Games"
+	},
+	{
+		"id" : 331,
+		"publisher_name" : "Milestone"
+	},
+	{
+		"id" : 332,
+		"publisher_name" : "Milestone S.r.l"
+	},
+	{
+		"id" : 333,
+		"publisher_name" : "Milestone S.r.l."
+	},
+	{
+		"id" : 334,
+		"publisher_name" : "Minato Station"
+	},
+	{
+		"id" : 335,
+		"publisher_name" : "Mindscape"
+	},
+	{
+		"id" : 336,
+		"publisher_name" : "Mirai Shounen"
+	},
+	{
+		"id" : 337,
+		"publisher_name" : "Misawa"
+	},
+	{
+		"id" : 338,
+		"publisher_name" : "Mitsui"
+	},
+	{
+		"id" : 339,
+		"publisher_name" : "mixi, Inc"
+	},
+	{
+		"id" : 340,
+		"publisher_name" : "MLB.com"
+	},
+	{
+		"id" : 341,
+		"publisher_name" : "Mojang"
+	},
+	{
+		"id" : 342,
+		"publisher_name" : "Monte Christo Multimedia"
+	},
+	{
+		"id" : 343,
+		"publisher_name" : "Moss"
+	},
+	{
+		"id" : 344,
+		"publisher_name" : "MTO"
+	},
+	{
+		"id" : 345,
+		"publisher_name" : "MTV Games"
+	},
+	{
+		"id" : 346,
+		"publisher_name" : "Mud Duck Productions"
+	},
+	{
+		"id" : 347,
+		"publisher_name" : "Mumbo Jumbo"
+	},
+	{
+		"id" : 348,
+		"publisher_name" : "Mycom"
+	},
+	{
+		"id" : 349,
+		"publisher_name" : "Myelin Media"
+	},
+	{
+		"id" : 350,
+		"publisher_name" : "Mystique"
+	},
+	{
+		"id" : 351,
+		"publisher_name" : "N/A"
+	},
+	{
+		"id" : 352,
+		"publisher_name" : "Namco Bandai Games"
+	},
+	{
+		"id" : 353,
+		"publisher_name" : "Natsume"
+	},
+	{
+		"id" : 354,
+		"publisher_name" : "Navarre Corp"
+	},
+	{
+		"id" : 355,
+		"publisher_name" : "Naxat Soft"
+	},
+	{
+		"id" : 356,
+		"publisher_name" : "NCS"
+	},
+	{
+		"id" : 357,
+		"publisher_name" : "NCSoft"
+	},
+	{
+		"id" : 358,
+		"publisher_name" : "NDA Productions"
+	},
+	{
+		"id" : 359,
+		"publisher_name" : "NEC"
+	},
+	{
+		"id" : 360,
+		"publisher_name" : "NEC Interchannel"
+	},
+	{
+		"id" : 361,
+		"publisher_name" : "Neko Entertainment"
+	},
+	{
+		"id" : 362,
+		"publisher_name" : "NetRevo"
+	},
+	{
+		"id" : 363,
+		"publisher_name" : "New"
+	},
+	{
+		"id" : 364,
+		"publisher_name" : "New World Computing"
+	},
+	{
+		"id" : 365,
+		"publisher_name" : "NewKidCo"
+	},
+	{
+		"id" : 366,
+		"publisher_name" : "Nexon"
+	},
+	{
+		"id" : 367,
+		"publisher_name" : "Nichibutsu"
+	},
+	{
+		"id" : 368,
+		"publisher_name" : "Nihon Falcom Corporation"
+	},
+	{
+		"id" : 369,
+		"publisher_name" : "Nintendo"
+	},
+	{
+		"id" : 370,
+		"publisher_name" : "Nippon Amuse"
+	},
+	{
+		"id" : 371,
+		"publisher_name" : "Nippon Columbia"
+	},
+	{
+		"id" : 372,
+		"publisher_name" : "Nippon Ichi Software"
+	},
+	{
+		"id" : 373,
+		"publisher_name" : "Nippon Telenet"
+	},
+	{
+		"id" : 374,
+		"publisher_name" : "Nitroplus"
+	},
+	{
+		"id" : 375,
+		"publisher_name" : "Nobilis"
+	},
+	{
+		"id" : 376,
+		"publisher_name" : "Nordcurrent"
+	},
+	{
+		"id" : 377,
+		"publisher_name" : "Nordic Games"
+	},
+	{
+		"id" : 378,
+		"publisher_name" : "NovaLogic"
+	},
+	{
+		"id" : 379,
+		"publisher_name" : "Number None"
+	},
+	{
+		"id" : 380,
+		"publisher_name" : "O-Games"
+	},
+	{
+		"id" : 381,
+		"publisher_name" : "O3 Entertainment"
+	},
+	{
+		"id" : 382,
+		"publisher_name" : "Ocean"
+	},
+	{
+		"id" : 383,
+		"publisher_name" : "Office Create"
+	},
+	{
+		"id" : 384,
+		"publisher_name" : "On Demand"
+	},
+	{
+		"id" : 385,
+		"publisher_name" : "Ongakukan"
+	},
+	{
+		"id" : 386,
+		"publisher_name" : "Origin Systems"
+	},
+	{
+		"id" : 387,
+		"publisher_name" : "Otomate"
+	},
+	{
+		"id" : 388,
+		"publisher_name" : "Oxygen Interactive"
+	},
+	{
+		"id" : 389,
+		"publisher_name" : "P2 Games"
+	},
+	{
+		"id" : 390,
+		"publisher_name" : "Pacific Century Cyber Works"
+	},
+	{
+		"id" : 391,
+		"publisher_name" : "Pack In Soft"
+	},
+	{
+		"id" : 392,
+		"publisher_name" : "Pack-In-Video"
+	},
+	{
+		"id" : 393,
+		"publisher_name" : "Palcom"
+	},
+	{
+		"id" : 394,
+		"publisher_name" : "Panther Software"
+	},
+	{
+		"id" : 395,
+		"publisher_name" : "Paon"
+	},
+	{
+		"id" : 396,
+		"publisher_name" : "Paon Corporation"
+	},
+	{
+		"id" : 397,
+		"publisher_name" : "Paradox Development"
+	},
+	{
+		"id" : 398,
+		"publisher_name" : "Paradox Interactive"
+	},
+	{
+		"id" : 399,
+		"publisher_name" : "Parker Bros."
+	},
+	{
+		"id" : 400,
+		"publisher_name" : "Performance Designed Products"
+	},
+	{
+		"id" : 401,
+		"publisher_name" : "Phantagram"
+	},
+	{
+		"id" : 402,
+		"publisher_name" : "Phantom EFX"
+	},
+	{
+		"id" : 403,
+		"publisher_name" : "Phenomedia"
+	},
+	{
+		"id" : 404,
+		"publisher_name" : "Phoenix Games"
+	},
+	{
+		"id" : 405,
+		"publisher_name" : "Piacci"
+	},
+	{
+		"id" : 406,
+		"publisher_name" : "Pinnacle"
+	},
+	{
+		"id" : 407,
+		"publisher_name" : "Pioneer LDC"
+	},
+	{
+		"id" : 408,
+		"publisher_name" : "Play It"
+	},
+	{
+		"id" : 409,
+		"publisher_name" : "Playlogic Game Factory"
+	},
+	{
+		"id" : 410,
+		"publisher_name" : "Playmates"
+	},
+	{
+		"id" : 411,
+		"publisher_name" : "Playmore"
+	},
+	{
+		"id" : 412,
+		"publisher_name" : "PlayV"
+	},
+	{
+		"id" : 413,
+		"publisher_name" : "Plenty"
+	},
+	{
+		"id" : 414,
+		"publisher_name" : "PM Studios"
+	},
+	{
+		"id" : 415,
+		"publisher_name" : "Pony Canyon"
+	},
+	{
+		"id" : 416,
+		"publisher_name" : "PopCap Games"
+	},
+	{
+		"id" : 417,
+		"publisher_name" : "Popcorn Arcade"
+	},
+	{
+		"id" : 418,
+		"publisher_name" : "PopTop Software"
+	},
+	{
+		"id" : 419,
+		"publisher_name" : "Pow"
+	},
+	{
+		"id" : 420,
+		"publisher_name" : "PQube"
+	},
+	{
+		"id" : 421,
+		"publisher_name" : "Princess Soft"
+	},
+	{
+		"id" : 422,
+		"publisher_name" : "Prototype"
+	},
+	{
+		"id" : 423,
+		"publisher_name" : "Psygnosis"
+	},
+	{
+		"id" : 424,
+		"publisher_name" : "Quelle"
+	},
+	{
+		"id" : 425,
+		"publisher_name" : "Quest"
+	},
+	{
+		"id" : 426,
+		"publisher_name" : "Quinrose"
+	},
+	{
+		"id" : 427,
+		"publisher_name" : "Quintet"
+	},
+	{
+		"id" : 428,
+		"publisher_name" : "Rage Software"
+	},
+	{
+		"id" : 429,
+		"publisher_name" : "Rain Games"
+	},
+	{
+		"id" : 430,
+		"publisher_name" : "Rebellion"
+	},
+	{
+		"id" : 431,
+		"publisher_name" : "Rebellion Developments"
+	},
+	{
+		"id" : 432,
+		"publisher_name" : "RED Entertainment"
+	},
+	{
+		"id" : 433,
+		"publisher_name" : "Red Orb"
+	},
+	{
+		"id" : 434,
+		"publisher_name" : "Red Storm Entertainment"
+	},
+	{
+		"id" : 435,
+		"publisher_name" : "RedOctane"
+	},
+	{
+		"id" : 436,
+		"publisher_name" : "Reef Entertainment"
+	},
+	{
+		"id" : 437,
+		"publisher_name" : "responDESIGN"
+	},
+	{
+		"id" : 438,
+		"publisher_name" : "Revolution (Japan)"
+	},
+	{
+		"id" : 439,
+		"publisher_name" : "Revolution Software"
+	},
+	{
+		"id" : 440,
+		"publisher_name" : "Rising Star Games"
+	},
+	{
+		"id" : 441,
+		"publisher_name" : "Riverhillsoft"
+	},
+	{
+		"id" : 442,
+		"publisher_name" : "Rocket Company"
+	},
+	{
+		"id" : 443,
+		"publisher_name" : "Rondomedia"
+	},
+	{
+		"id" : 444,
+		"publisher_name" : "RTL"
+	},
+	{
+		"id" : 445,
+		"publisher_name" : "Russel"
+	},
+	{
+		"id" : 446,
+		"publisher_name" : "Sammy Corporation"
+	},
+	{
+		"id" : 447,
+		"publisher_name" : "Saurus"
+	},
+	{
+		"id" : 448,
+		"publisher_name" : "Scholastic Inc."
+	},
+	{
+		"id" : 449,
+		"publisher_name" : "SCi"
+	},
+	{
+		"id" : 450,
+		"publisher_name" : "Screenlife"
+	},
+	{
+		"id" : 451,
+		"publisher_name" : "SCS Software"
+	},
+	{
+		"id" : 452,
+		"publisher_name" : "Sega"
+	},
+	{
+		"id" : 453,
+		"publisher_name" : "Seta Corporation"
+	},
+	{
+		"id" : 454,
+		"publisher_name" : "Seventh Chord"
+	},
+	{
+		"id" : 455,
+		"publisher_name" : "Shogakukan"
+	},
+	{
+		"id" : 456,
+		"publisher_name" : "Simon & Schuster Interactive"
+	},
+	{
+		"id" : 457,
+		"publisher_name" : "Slightly Mad Studios"
+	},
+	{
+		"id" : 458,
+		"publisher_name" : "Slitherine Software"
+	},
+	{
+		"id" : 459,
+		"publisher_name" : "SNK"
+	},
+	{
+		"id" : 460,
+		"publisher_name" : "SNK Playmore"
+	},
+	{
+		"id" : 461,
+		"publisher_name" : "Societa"
+	},
+	{
+		"id" : 462,
+		"publisher_name" : "Sold Out"
+	},
+	{
+		"id" : 463,
+		"publisher_name" : "Sonnet"
+	},
+	{
+		"id" : 464,
+		"publisher_name" : "Sony Computer Entertainment"
+	},
+	{
+		"id" : 465,
+		"publisher_name" : "Sony Computer Entertainment America"
+	},
+	{
+		"id" : 466,
+		"publisher_name" : "Sony Computer Entertainment Europe"
+	},
+	{
+		"id" : 467,
+		"publisher_name" : "Sony Music Entertainment"
+	},
+	{
+		"id" : 468,
+		"publisher_name" : "Sony Online Entertainment"
+	},
+	{
+		"id" : 469,
+		"publisher_name" : "SouthPeak Games"
+	},
+	{
+		"id" : 470,
+		"publisher_name" : "Spike"
+	},
+	{
+		"id" : 471,
+		"publisher_name" : "SPS"
+	},
+	{
+		"id" : 472,
+		"publisher_name" : "Square"
+	},
+	{
+		"id" : 473,
+		"publisher_name" : "Square EA"
+	},
+	{
+		"id" : 474,
+		"publisher_name" : "Square Enix"
+	},
+	{
+		"id" : 475,
+		"publisher_name" : "SquareSoft"
+	},
+	{
+		"id" : 476,
+		"publisher_name" : "SSI"
+	},
+	{
+		"id" : 477,
+		"publisher_name" : "Stainless Games"
+	},
+	{
+		"id" : 478,
+		"publisher_name" : "Starfish"
+	},
+	{
+		"id" : 479,
+		"publisher_name" : "Starpath Corp."
+	},
+	{
+		"id" : 480,
+		"publisher_name" : "Sting"
+	},
+	{
+		"id" : 481,
+		"publisher_name" : "Storm City Games"
+	},
+	{
+		"id" : 482,
+		"publisher_name" : "Strategy First"
+	},
+	{
+		"id" : 483,
+		"publisher_name" : "Success"
+	},
+	{
+		"id" : 484,
+		"publisher_name" : "Summitsoft"
+	},
+	{
+		"id" : 485,
+		"publisher_name" : "Sunflowers"
+	},
+	{
+		"id" : 486,
+		"publisher_name" : "Sunrise Interactive"
+	},
+	{
+		"id" : 487,
+		"publisher_name" : "Sunsoft"
+	},
+	{
+		"id" : 488,
+		"publisher_name" : "Sweets"
+	},
+	{
+		"id" : 489,
+		"publisher_name" : "Swing! Entertainment"
+	},
+	{
+		"id" : 490,
+		"publisher_name" : "Syscom"
+	},
+	{
+		"id" : 491,
+		"publisher_name" : "System 3"
+	},
+	{
+		"id" : 492,
+		"publisher_name" : "System 3 Arcade Software"
+	},
+	{
+		"id" : 493,
+		"publisher_name" : "System Soft"
+	},
+	{
+		"id" : 494,
+		"publisher_name" : "T&E Soft"
+	},
+	{
+		"id" : 495,
+		"publisher_name" : "Taito"
+	},
+	{
+		"id" : 496,
+		"publisher_name" : "Takara"
+	},
+	{
+		"id" : 497,
+		"publisher_name" : "Takara Tomy"
+	},
+	{
+		"id" : 498,
+		"publisher_name" : "Take-Two Interactive"
+	},
+	{
+		"id" : 499,
+		"publisher_name" : "Takuyo"
+	},
+	{
+		"id" : 500,
+		"publisher_name" : "TalonSoft"
+	},
+	{
+		"id" : 501,
+		"publisher_name" : "TDK Core"
+	},
+	{
+		"id" : 502,
+		"publisher_name" : "TDK Mediactive"
+	},
+	{
+		"id" : 503,
+		"publisher_name" : "Team17 Software"
+	},
+	{
+		"id" : 504,
+		"publisher_name" : "Technos Japan Corporation"
+	},
+	{
+		"id" : 505,
+		"publisher_name" : "TechnoSoft"
+	},
+	{
+		"id" : 506,
+		"publisher_name" : "Tecmo Koei"
+	},
+	{
+		"id" : 507,
+		"publisher_name" : "Telegames"
+	},
+	{
+		"id" : 508,
+		"publisher_name" : "Telltale Games"
+	},
+	{
+		"id" : 509,
+		"publisher_name" : "Telstar"
+	},
+	{
+		"id" : 510,
+		"publisher_name" : "Tetris Online"
+	},
+	{
+		"id" : 511,
+		"publisher_name" : "TGL"
+	},
+	{
+		"id" : 512,
+		"publisher_name" : "The Adventure Company"
+	},
+	{
+		"id" : 513,
+		"publisher_name" : "The Learning Company"
+	},
+	{
+		"id" : 514,
+		"publisher_name" : "THQ"
+	},
+	{
+		"id" : 515,
+		"publisher_name" : "Tigervision"
+	},
+	{
+		"id" : 516,
+		"publisher_name" : "Time Warner Interactive"
+	},
+	{
+		"id" : 517,
+		"publisher_name" : "Titus"
+	},
+	{
+		"id" : 518,
+		"publisher_name" : "Tivola"
+	},
+	{
+		"id" : 519,
+		"publisher_name" : "TOHO"
+	},
+	{
+		"id" : 520,
+		"publisher_name" : "Tommo"
+	},
+	{
+		"id" : 521,
+		"publisher_name" : "Tomy Corporation"
+	},
+	{
+		"id" : 522,
+		"publisher_name" : "TopWare Interactive"
+	},
+	{
+		"id" : 523,
+		"publisher_name" : "Touchstone"
+	},
+	{
+		"id" : 524,
+		"publisher_name" : "Tradewest"
+	},
+	{
+		"id" : 525,
+		"publisher_name" : "Trion Worlds"
+	},
+	{
+		"id" : 526,
+		"publisher_name" : "Tripwire Interactive"
+	},
+	{
+		"id" : 527,
+		"publisher_name" : "Tru Blu Entertainment"
+	},
+	{
+		"id" : 528,
+		"publisher_name" : "Tryfirst"
+	},
+	{
+		"id" : 529,
+		"publisher_name" : "TYO"
+	},
+	{
+		"id" : 530,
+		"publisher_name" : "Type-Moon"
+	},
+	{
+		"id" : 531,
+		"publisher_name" : "U.S. Gold"
+	},
+	{
+		"id" : 532,
+		"publisher_name" : "Ubisoft"
+	},
+	{
+		"id" : 533,
+		"publisher_name" : "Ubisoft Annecy"
+	},
+	{
+		"id" : 534,
+		"publisher_name" : "UEP Systems"
+	},
+	{
+		"id" : 535,
+		"publisher_name" : "UFO Interactive"
+	},
+	{
+		"id" : 536,
+		"publisher_name" : "UIG Entertainment"
+	},
+	{
+		"id" : 537,
+		"publisher_name" : "Universal Gamex"
+	},
+	{
+		"id" : 538,
+		"publisher_name" : "Universal Interactive"
+	},
+	{
+		"id" : 539,
+		"publisher_name" : "Unknown"
+	},
+	{
+		"id" : 540,
+		"publisher_name" : "Valcon Games"
+	},
+	{
+		"id" : 541,
+		"publisher_name" : "ValuSoft"
+	},
+	{
+		"id" : 542,
+		"publisher_name" : "Valve"
+	},
+	{
+		"id" : 543,
+		"publisher_name" : "Valve Software"
+	},
+	{
+		"id" : 544,
+		"publisher_name" : "Vap"
+	},
+	{
+		"id" : 545,
+		"publisher_name" : "Vatical Entertainment"
+	},
+	{
+		"id" : 546,
+		"publisher_name" : "Vic Tokai"
+	},
+	{
+		"id" : 547,
+		"publisher_name" : "Victor Interactive"
+	},
+	{
+		"id" : 548,
+		"publisher_name" : "Video System"
+	},
+	{
+		"id" : 549,
+		"publisher_name" : "Views"
+	},
+	{
+		"id" : 550,
+		"publisher_name" : "Vir2L Studios"
+	},
+	{
+		"id" : 551,
+		"publisher_name" : "Virgin Interactive"
+	},
+	{
+		"id" : 552,
+		"publisher_name" : "Virtual Play Games"
+	},
+	{
+		"id" : 553,
+		"publisher_name" : "Visco"
+	},
+	{
+		"id" : 554,
+		"publisher_name" : "Vivendi Games"
+	},
+	{
+		"id" : 555,
+		"publisher_name" : "Wanadoo"
+	},
+	{
+		"id" : 556,
+		"publisher_name" : "Warashi"
+	},
+	{
+		"id" : 557,
+		"publisher_name" : "Wargaming.net"
+	},
+	{
+		"id" : 558,
+		"publisher_name" : "Warner Bros. Interactive Entertainment"
+	},
+	{
+		"id" : 559,
+		"publisher_name" : "Warp"
+	},
+	{
+		"id" : 560,
+		"publisher_name" : "WayForward Technologies"
+	},
+	{
+		"id" : 561,
+		"publisher_name" : "Westwood Studios"
+	},
+	{
+		"id" : 562,
+		"publisher_name" : "White Park Bay Software"
+	},
+	{
+		"id" : 563,
+		"publisher_name" : "Wizard Video Games"
+	},
+	{
+		"id" : 564,
+		"publisher_name" : "Xicat Interactive"
+	},
+	{
+		"id" : 565,
+		"publisher_name" : "Xing Entertainment"
+	},
+	{
+		"id" : 566,
+		"publisher_name" : "Xplosiv"
+	},
+	{
+		"id" : 567,
+		"publisher_name" : "XS Games"
+	},
+	{
+		"id" : 568,
+		"publisher_name" : "Xseed Games"
+	},
+	{
+		"id" : 569,
+		"publisher_name" : "Yacht Club Games"
+	},
+	{
+		"id" : 570,
+		"publisher_name" : "Yamasa Entertainment"
+	},
+	{
+		"id" : 571,
+		"publisher_name" : "Yeti"
+	},
+	{
+		"id" : 572,
+		"publisher_name" : "Yuke's"
+	},
+	{
+		"id" : 573,
+		"publisher_name" : "Yumedia"
+	},
+	{
+		"id" : 574,
+		"publisher_name" : "Zenrin"
+	},
+	{
+		"id" : 575,
+		"publisher_name" : "Zoo Digital Publishing"
+	},
+	{
+		"id" : 576,
+		"publisher_name" : "Zoo Games"
+	},
+	{
+		"id" : 577,
+		"publisher_name" : "Zushi Games"
+	}
+]

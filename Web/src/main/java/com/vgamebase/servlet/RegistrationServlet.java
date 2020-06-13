@@ -58,13 +58,15 @@ public class RegistrationServlet extends AbstractServlet {
 			newUser.setEmail(email);
 			newUser.setUserProfile(maestrosService.findUserProfileByType("User"));
 			newUser.setActive(true);
-			PasswordEncoder encoder = new BCryptPasswordEncoder();
+			PasswordEncoder encoder = new BCryptPasswordEncoder(12);
 			String encryptedPassword = encoder.encode(password) ;
 			newUser.setPassword(encryptedPassword);
 			
 			userService.save(newUser);
 			
-			response.sendRedirect("./registration");
+			response.sendRedirect("./login");
+			
+			session.setAttribute("successfulRegistration", "true");
 			
 		}else {
 			

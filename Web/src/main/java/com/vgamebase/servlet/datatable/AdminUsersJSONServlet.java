@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.vgamebase.model.User;
 import com.vgamebase.model.datatable.DataTableAdminUser;
 import com.vgamebase.servlet.AbstractServlet;
 import com.vgamebase.servlet.configuration.HibernateProxyTypeAdapter;
@@ -89,6 +90,11 @@ public class AdminUsersJSONServlet extends AbstractServlet {
 			datatable.setUsers(userService.paginationUserFilterNoOrder(start, map, length, hide));
 		} else {
 			datatable.setUsers(userService.paginationUserFilterAndOrder(start, map, order, orderDir, length, hide));
+		}
+		
+		for(User user : datatable.getUsers()) {
+			user.setVotes(null);
+			user.setComments(null);
 		}
 		
 		Gson gson = new GsonBuilder().registerTypeAdapterFactory(HibernateProxyTypeAdapter.FACTORY).create();

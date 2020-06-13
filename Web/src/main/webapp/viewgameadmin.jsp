@@ -1,4 +1,11 @@
 <%@page import="java.nio.charset.StandardCharsets"%>
+<%@page
+	import="org.springframework.security.core.context.SecurityContextHolder"%>
+<%@page
+	import="org.springframework.security.core.userdetails.UserDetails"%>
+<%@page
+	import="org.springframework.security.core.authority.SimpleGrantedAuthority"%>
+<%@page import="com.vgamebase.model.User"%>
 <%@page import="com.vgamebase.model.Genre"%>
 <%@page import="com.vgamebase.model.Publisher"%>
 <%@page import="com.vgamebase.model.Platform"%>
@@ -17,9 +24,7 @@
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.9/css/fileinput.min.css"
 	media="all" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="css/gameviewadmin.css">
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/js/plugins/piexif.min.js"
 	type="text/javascript"></script>
@@ -41,6 +46,14 @@
 	<jsp:include page="layout/header.jsp" />
 
 	<%
+		UserDetails principalUser = null;
+	Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+	if (principal instanceof UserDetails) {
+		principalUser = ((UserDetails) principal);
+	}
+	%>
+
+	<%
 	
 	GamePlatform gameplatform = (GamePlatform) request.getAttribute("game");
 	
@@ -51,6 +64,8 @@
 	String genre = "";
 	List<RegionSales> regionsales = new ArrayList<RegionSales>();
 	List<Image> images = new ArrayList<Image>();
+	
+	User user = (User) session.getAttribute("user");
 	
 	if(gameplatform != null){
 		releaseYear = gameplatform.getReleaseYear();
@@ -86,6 +101,12 @@
 		<%String updatedGame = (String) session.getAttribute("updatedGame");%>
 		<%if (updatedGame == null || updatedGame.equals("null") || updatedGame.equals("")) {%>
 		hidden="true" <%}%>>Game updated successfully!</div>
+
+	<div class="alert alert-success my-4 text-center" id="alertPostedVote"
+		role="alert"
+		<%String postedVote = (String) session.getAttribute("postedVote");%>
+		<%if (postedVote == null || postedVote.equals("null") || postedVote.equals("")) {%>
+		hidden="true" <%}%>>Vote posted successfully!</div>
 
 	<div class="row mt-5" style="min-height: 100%">
 		<div class="col-md-2"></div>
@@ -256,8 +277,16 @@
 				class="mt-5 mb-3 col-12 mt-3 mb-2 bg-white p-4 border
 				border-light rounded-lg">
 				<h4 class="font-weight-bold mb-1">Votes</h4>
-				<span class="text-success">0</span><button class="btn btn-lg"><span class="glyphicon glyphicon-thumbs-up text-success"></span></button>
-				<span class="ml-1 text-danger">0</span><button class="btn btn-lg"><span class="glyphicon glyphicon-thumbs-down text-danger"></span></button>
+				<span class="text-success"><%=gameplatform.getLikes()%></span>
+				<button class="btn btn-lg" id="voteLike">
+					<span
+						class="<% if(user.alreadyVoted(gameplatform,"like")) { %>fa fa-thumbs-up text-success <% }else{ %>fa fa-thumbs-o-up text-success<% } %>"></span>
+				</button>
+				<span class="text-danger"><%=gameplatform.getDislikes()%></span>
+				<button class="btn btn-lg" id="voteDislike">
+					<span
+						class="<% if(user.alreadyVoted(gameplatform,"dislike")) { %>fa fa-thumbs-down text-danger <% }else{ %>fa fa-thumbs-o-down text-danger<% } %>"></span>
+				</button>
 				<h4 class="font-weight-bold mt-3">Comments</h4>
 				<fieldset class="mt-3">
 
@@ -265,16 +294,71 @@
 
 					<p class="my-2 font-italic">This game doesn't have comments yet</p>
 
-					<% } else { %>
+					<% } else { 
+						for (int i = 0; i < gameplatform.getComments().size(); i++) {
+					%>
 
-					<% } %>
+					<div class="row d-flex justify-content-center my-5">
+						<div class="col-8">
+							<div class="card card-white post p-4">
+								<div class="post-heading">
+									<div class="float-left image">
+										<img src="img/avatar.png" class="avatar mr-4"
+											alt="user profile image"
+											style="max-width: 35px; max-height: 35px">
+									</div>
+									<div class="float-left meta">
+										<div class="title h5">
+											<b class="text-info"><%=gameplatform.getComments().get(i).getUser().getUserName()%></b>
+											posted a comment.
+										</div>
+									</div>
+									<%
+															if (user != null) {
+															if ( principalUser != null
+																	&& principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Admin")) || principalUser != null
+															&& principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Moderator"))) {
+														%>
 
+									<div class="float-right">
+										<button type="button" class="btn btn-danger eliminarComment"
+											data-id="<%=gameplatform.getComments().get(i).getId()%>">
+											<span class="fa fa-trash text-white"></span>
+										</button>
+									</div>
+
+									<%		} 
+													} %>
+
+								</div>
+								<div class="post-description border-top mt-4">
+									<p class="mt-4 mb-3 font-weight-bold"><%=gameplatform.getComments().get(i).getText()%></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<%
+															}
+														}
+														%>
 				</fieldset>
-				<form class="needs-validation mt-4">
+				<form class="needs-validation mt-4" action="./games" method="post"
+					novalidate>
+					<%
+													if (gameplatform != null) {
+												%>
+					<input type="hidden" name="id" value="<%=gameplatform.getId()%>" />
+					<input type="hidden" name="admin" value="admin" />
+					<%
+													}
+												%>
 					<div class="form-group my-2">
-						<label for="comment" class="font-weight-bold">Post a comment:</label>
-						<textarea class="form-control" id="comment" rows="7"
-							placeholder="Write something here..."  minlength="5" maxlength="120" required></textarea>
+						<label for="comment" class="font-weight-bold">Post a
+							comment:</label>
+						<textarea class="form-control" id="comment" name="comment" rows="7"
+							placeholder="Write something here..." minlength="5"
+							maxlength="120" required></textarea>
 					</div>
 					<button type="submit" class="btn btn-lg btn-danger my-3"
 						id="submitComment">Post</button>
@@ -304,6 +388,10 @@
 			$("#alertUpdatedGame").fadeOut("slow");
 		}, 3000);
 	<%session.removeAttribute("updatedGame");%>	
+		window.setTimeout(function() {
+			$("#alertPostedVote").fadeOut("slow");
+		}, 3000);
+	<%session.removeAttribute("postedVote");%>	
 		(
 				function() {
 					'use strict';
@@ -351,7 +439,7 @@
 															for(Image image : images){																
 													%>
 													
-													'<img src=\'data:image/png;base64, <%=image.getImageParsed() %>\' style="width:200px" class=\'file-preview-image\' alt=\'Car Image\' title=\'Car Image\'>',		
+													'<img src=\'data:image/png;base64, <%=image.getImageParsed() %>\' style="width:200px; max-height:150px" class=\'file-preview-image\' alt=\'Car Image\' title=\'Car Image\'>',		
 													
 													<%}
 
@@ -386,6 +474,52 @@
 												allowedFileTypes : ['image'],
 											});
 						});
+		
+		$('#voteLike').click(function() {
+			$.ajax({
+				type : "POST",
+				url : "./games",
+				data : {
+					id :
+	<%=gameplatform.getId()%>
+		,
+					vote : "like"
+				},
+				success : function(result) {
+					location.reload();
+				}
+			});
+		});
+
+		$('#voteDislike').click(function() {
+			$.ajax({
+				type : "POST",
+				url : "./games",
+				data : {
+					id :
+	<%=gameplatform.getId()%>
+		,
+					vote : "dislike"
+				},
+				success : function(result) {
+					location.reload();
+				}
+			});
+		});	
+		
+		$('.eliminarComment').click(function() {
+			var id = $(this).attr("data-id");
+			$.ajax({
+				type : "POST",
+				url : "./games?delete=comment",
+				data : {
+					id : id
+				},
+				success : function(result) {
+					location.reload();
+				}
+			});
+		});		
 	</script>
 </body>
 </html>

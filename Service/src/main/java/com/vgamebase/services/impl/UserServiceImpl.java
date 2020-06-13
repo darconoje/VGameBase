@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
-		com.vgamebase.model.User u = userDao.findByEmail(username);
+		com.vgamebase.model.User u = userDao.findByUsername(username);
 
 		List<GrantedAuthority> authorities = buildUserAuthority(u.getUserProfile());
 
@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserDetailsService {
 	}
 	
 	private User buildUserForAuthentication(com.vgamebase.model.User user, List<GrantedAuthority> authorities) {
-		return new User(user.getEmail(), user.getPassword(), user.isActive(), true, true, true, authorities);
+		return new User(user.getUserName(), user.getPassword(), user.isActive(), true, true, true, authorities);
 	}
 
 	private List<GrantedAuthority> buildUserAuthority(UserProfile userRole) {

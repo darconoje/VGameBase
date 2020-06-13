@@ -7,6 +7,8 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
+import com.vgamebase.model.GamePlatform;
+import com.vgamebase.model.User;
 import com.vgamebase.model.Vote;
 
 @Repository("voteDao")
@@ -26,6 +28,16 @@ public class VoteDaoImpl extends AbstractDao<Integer, Vote> implements VoteDao {
 	
 	public Vote findByPk(long key) {
 		return getByKey(key);
+	}
+	
+	public Vote findByUserAndGamePlatform(User user, GamePlatform gameplatform) {
+		try {
+			Vote vote = (Vote) getEntityManager().createQuery("SELECT v FROM Vote v WHERE v.user = :user AND v.game = :gameplatform")
+					.setParameter("user", user).setParameter("gameplatform", gameplatform).getSingleResult();
+			return vote;
+		} catch (NoResultException ex) {
+			return null;
+		}
 	}
 	
 	@Override

@@ -9,9 +9,17 @@ import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.vgamebase.model.Region;
 import com.vgamebase.model.RegionSales;
+import com.vgamebase.model.User;
 
 @WebServlet(name = "GamesServlet", urlPatterns = { "/games" })
 @MultipartConfig(fileSizeThreshold = 1024 * 1024 * 10, // 10 MB
@@ -25,12 +33,30 @@ public class GamesServlet extends AbstractServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		HttpSession session = request.getSession();
+		
+		UserDetails principalUser = null;
+		Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		if (principal instanceof UserDetails) {
+			principalUser = ((UserDetails) principal);
+		} 
+		
+		if(session.getAttribute("user") == null) {
+			User user = userService.findByUsername(principalUser.getUsername());
+			
+			session.setAttribute("user", user);
+		}
 
 		String view = request.getParameter("view");
 		String id = request.getParameter("id");
+		
+		PasswordEncoder encoder = new BCryptPasswordEncoder(12);
+		System.out.println(encoder.encode("admin"));
 
 		if (view != null && view.equals("game") && id != null && !id.equals("") && !id.equals("null")) {
 			request.setAttribute("game", maestrosService.findGamePlatformByPk(Long.valueOf(id)));
+			request.setAttribute("regions", maestrosService.findAllRegions());
 			List<Region> regions = maestrosService.findAllRegions();
 			List<RegionSales> regionsales = new ArrayList<RegionSales>();
 			for (Region region : regions) {
@@ -54,7 +80,12 @@ public class GamesServlet extends AbstractServlet {
 				}
 				request.setAttribute("regionsales", regionsales);
 			}
-			request.getRequestDispatcher("./viewgameadmin.jsp").forward(request, response);
+			if(principalUser != null && principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Admin")) || principalUser.getAuthorities().contains(new SimpleGrantedAuthority("Manager")) ){
+				request.getRequestDispatcher("./viewgameadmin.jsp").forward(request, response);			
+			} else {
+				request.getRequestDispatcher("./error.jsp").forward(request, response);	
+			}
+
 		} else {
 			request.getRequestDispatcher("./index.jsp").forward(request, response);
 		}
@@ -68,8 +99,21 @@ public class GamesServlet extends AbstractServlet {
 		String id = request.getParameter("id");
 		String imageId = request.getParameter("key");
 		String delete = request.getParameter("delete");
-
-		if (delete == null || delete.equals("") || delete.equals("null")) {
+		String comment = request.getParameter("comment");
+		String vote = request.getParameter("vote");
+		String admin = request.getParameter("admin");
+		
+		if(vote != null && !vote.equals("")) {
+			gameController.postVote(request, response);
+			response.sendRedirect("./games?view=game&id=" + id);
+		} else if(comment != null && !comment.equals("")) {
+			gameController.postComment(request, response);
+			if(admin != null && !admin.equals("")) {
+				response.sendRedirect("./games?view=gameAdmin&id=" + id);
+			} else {
+				response.sendRedirect("./games?view=game&id=" + id);				
+			}
+		} else if (delete == null || delete.equals("") || delete.equals("null")) {
 			request.setAttribute("genres", maestrosService.findAllGenres());
 			request.setAttribute("publishers", maestrosService.findAllPublishers());
 			request.setAttribute("platforms", maestrosService.findAllPlatforms());
@@ -84,7 +128,12 @@ public class GamesServlet extends AbstractServlet {
 				response.sendRedirect("./games?view=gameAdmin");
 			}
 		} else {
-			gameController.deleteGame(request, response);
+			if(delete.equals("game")) {
+				gameController.deleteGame(request, response);			
+			} else if(delete.equals("comment")) {
+				gameController.deleteComment(request, response);
+			}
+
 		}
 
 	}

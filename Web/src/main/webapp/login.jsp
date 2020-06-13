@@ -9,6 +9,19 @@
 </head>
 <body class="bg-dark">
 	<jsp:include page="layout/header.jsp" />
+	
+		<div class="alert alert-success my-4 text-center" id="alertSuccessfulRegistration"
+		role="alert"
+		<%String successfulRegistration = (String) session.getAttribute("successfulRegistration");%>
+		<%if (successfulRegistration == null || successfulRegistration.equals("null") || successfulRegistration.equals("")) {%>
+		hidden="true" <%}%>>User registration complete, you can now log in!</div>
+		
+		<div class="alert alert-danger my-4 text-center" id="alertLoginError"
+		role="alert"
+		<%String loginError = (String) session.getAttribute("loginError");%>
+		<%if (loginError == null || loginError.equals("null") || loginError.equals("")) {%>
+		hidden="true" <%}%>>Incorrect login, please try again</div>		
+	
 	<div class="row" style="min-height: 100%">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
@@ -42,7 +55,7 @@
 										value="" required>
 								</div>
 								<div class="d-flex justify-content-center mt-3 login_container">
-									<button type="button" name="button" class="btn login_btn">Login</button>
+									<button type="submit" name="submit" id="submit" class="btn login_btn">Login</button>
 								</div>
 							</form>
 						</div>
@@ -92,6 +105,15 @@
 		    }
 		})
     }, 5000);
+    
+		window.setTimeout(function() {
+			$("#alertSuccessfulRegistration").fadeOut("slow");
+		}, 3000);
+	<%session.removeAttribute("successfulRegistration");%>
+		window.setTimeout(function() {
+			$("#alertLoginError").fadeOut("slow");
+		}, 3000);
+	<%session.removeAttribute("loginError");%>	
 	</script>
 </body>
 </html>

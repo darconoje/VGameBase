@@ -16,9 +16,6 @@
         <dependent-module archiveName="Configuration-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Configuration/Configuration">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="Security-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Security/Security">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="Web"/>
         <property name="java-output-path" value="/Web/target/classes"/>
     </wb-module>

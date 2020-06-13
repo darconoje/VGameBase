@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.vgamebase.dao.VoteDao;
+import com.vgamebase.model.GamePlatform;
+import com.vgamebase.model.User;
 import com.vgamebase.model.Vote;
 import com.vgamebase.services.VoteService;
 
@@ -21,6 +23,10 @@ public class VoteServiceImpl implements VoteService {
 	
 	public Vote findByPk(long key) {
 		return voteDao.findByPk(key);
+	}
+	
+	public Vote findByUserAndGamePlatform(User user, GamePlatform gameplatform) {
+		return voteDao.findByUserAndGamePlatform(user, gameplatform);
 	}
 	
 	public Vote save(Vote v) {
